@@ -23,3 +23,6 @@
 - 아래 그림은 `HttpSecurity` 라는 `Bean` 객체가 여러 설정클래스(`SecurityConfigurer`)를 생성하고, 그 설정 클래스들이 초기화 작업(`init()`, `configure()`)을 하면서 여러 `필터(Filter)`들을 생성하는 과정이다.
 
     ![img_1.png](../static/images/day02/img03.png)
+
+---
+> [참고자료](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)

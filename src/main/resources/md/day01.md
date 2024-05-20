@@ -147,3 +147,5 @@
 - **보안** : Form 로그인은 `HTTPS` 사용 시 보안이 강화된다. `HTTP Basic`은 항상 `HTTPS`를 사용해야 하며, 그렇지 않으면 정보가 쉽게 노출될 수 있다.
 - **상태 관리** : Form 로그인은 세션을 통해 사용자 상태를 관리하지만, HTTP Basic은 상태 비저장 방식으로 매 요청마다 인증 정보를 전송해야한다.
 
+---
+> [참고자료](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)

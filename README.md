@@ -7,3 +7,8 @@
 
 ### [2일차](https://github.com/LegdayDev/SpringSecurity_lab/blob/master/src/main/resources/md/day02.md)
 > 1. 초기화 작업이 이루어지는 과정
+
+### [3일차](https://github.com/LegdayDev/SpringSecurity_lab/blob/master/src/main/resources/md/day03.md)
+> 1. HttpSecurity
+> 2. SecurityFilterChain
+> 3. WebSecurity
