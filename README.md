@@ -16,3 +16,7 @@
 ### [4일차 : DelegatingFilterProxy / FilterChainProxy](https://github.com/LegdayDev/SpringSecurity_lab/blob/master/src/main/resources/md/day04.md)
 > 1. Filter
 > 2. DelegatingFilterProxy
+
+### [5일차 : DelegatingFilterProxy / FilterChainProxy](https://github.com/LegdayDev/SpringSecurity_lab/blob/master/src/main/resources/md/day04.md)
+> 1. FilterChainProxy
+> 2. 사용자 정의 보안 설정하기
