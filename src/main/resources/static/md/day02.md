@@ -11,7 +11,7 @@
 
 - `SecurityBuilder` 는 `SecurityConfigurer` 클래스를 참조하고 있으며 인증/인가 초기화 작업은 `SecurityConfigurer`에 의해 진행된다.
 
-    ![img.png](../static/images/day02/img01.png)
+    ![img.png](../images/day02/img01.png)
 
 #### 초기화 작업이 이루어지는 과정
 1. `AutoConfiguration`에 의해서 `SecurityBuilder` 클래스를 생성
@@ -19,10 +19,10 @@
 3. `SecurityConfigure` 는 내부적으로 `init()` 메서드와 `configure()` 메서드를 가지고 있다. 이 메서드들은 인자로 `SecurityBuilder` 타입을 받는다.
 4. `SecurityConfigure` 는 `init()` 메서드와 `configure()` 메서드로 초기화작업(인증/인가 등등)을 진행한다.
 
-    ![img.png](../static/images/day02/img02.png)
+    ![img.png](../images/day02/img02.png)
 - 아래 그림은 `HttpSecurity` 라는 `Bean` 객체가 여러 설정클래스(`SecurityConfigurer`)를 생성하고, 그 설정 클래스들이 초기화 작업(`init()`, `configure()`)을 하면서 여러 `필터(Filter)`들을 생성하는 과정이다.
 
-    ![img_1.png](../static/images/day02/img03.png)
+    ![img_1.png](../images/day02/img03.png)
 
 ---
 > [참고자료](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%8B%9C%ED%81%90%EB%A6%AC%ED%8B%B0-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5/dashboard)

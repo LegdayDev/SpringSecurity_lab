@@ -7,7 +7,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
 
     @GetMapping("/")
-    public String index(){
+    public String index() {
         return "index";
+    }
+
+    @GetMapping("/loginPage")
+    public String loginPage() {
+        return "loginPage"; // 우선 임의로 화면에만 띄우자.
+    }
+
+    @GetMapping("/home")
+    public String home() {
+        return "home";
     }
 }

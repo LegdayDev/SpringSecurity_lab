@@ -11,7 +11,7 @@
 - 서블릿 필터는 **클라이언트의 요청이 서블릿에 도달하기 전이나 서블릿의 응답을 클라이언트에게 보내기 전에 특정 작업을 수행**할 수 있다.
 - 서블릿 필터는 WAS(서블릿 컨테이너 또는 Tomcat)에서 `생성(init)`되고 `실행(doFilter)`되고 `종료(destroy)`된다.
 
-    ![img.png](../static/images/day04/img01.png)
+    ![img.png](../images/day04/img01.png)
 - 예시코드는 아래와 같다.
     ```java
     public class ExampleFilter implements Filter {
@@ -42,7 +42,7 @@
 - `DelegatingFilterProxy` 는 `springSecurityFilterChain` 이름으로 생성된 `Bean` 을 `ApplicationContext` 에서 찾아 ***요청을 위임***한다.
 - _**실제 보안 처리를 수행하지 않는다.**_
 
-    ![img_1.png](../static/images/day04/img02.png)
+    ![img_1.png](../images/day04/img02.png)
 - 위 그림처럼 `springSecurityFilterChain` 의 이름으로 생성되는 Filter Bean 은 `FilterChainProxy` 이다.
 ---
 ### 3. FilterChainProxy
@@ -50,7 +50,7 @@
 - 내부적으로 하나 이상의 SecurityFilterChain 객체들을 갖고 있으며 **요청 URL 정보를 기준으로 적절한 SecurityFilterChain을 선택하여 필터들을 호출**한다.
 - 사용자의 요청을 필터 순서대로 호출함으로 보안 기능을 동작시키고 필요 시 직접 필터를 생성해서 기존의 필터 전/후로 추가 가능하다.
 
-  ![img.png](../static/images/day04/img03.png)
+  ![img.png](../images/day04/img03.png)
 ---
 ### 4. 사용자 정의 보안 설정하기
 > 한 개 이상의 `SecurityFilterChain` 타입의 Bean 정의 후 인증(Authentication) API 및 인가(Authorization) API 를 설정한다.
@@ -59,7 +59,7 @@
 - 다음 `SecurityFilterChain` 빈으로 정의 후 `HttpSecurity` 를 의존 주입을 받는다.
 - `HttpSecurity` 빈 객체를 통해 `인증API` 및 `인가API`를 설정할 수 있다.
 
-  ![img.png](../static/images/day04/img04.png)
+  ![img.png](../images/day04/img04.png)
 
 #### 기본 구현 코드
 - `@EnableWebSecurity` 를 클래스에 정의한다.
