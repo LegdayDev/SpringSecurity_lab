@@ -23,3 +23,6 @@
 
 ### [6일차 : 폼 인증 - formLogin() / UsernamePasswordAuthenticationFilter](https://github.com/LegdayDev/SpringSecurity_lab/blob/master/src/main/resources/static/md/day05.md)
 > 1. 폼 인증 - formLogin()
+
+### [7일차 : 폼 인증 필터 - UsernamePasswordAuthenticationFilter](https://github.com/LegdayDev/SpringSecurity_lab/blob/master/src/main/resources/static/md/day05.md))
+> 1. 폼 인증 필터 - UsernamePasswordAuthenticationFilter
